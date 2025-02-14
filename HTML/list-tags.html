@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Tags</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Unordered List (<ul>) -->
+    <h3>Unordered List</h3>
+    <ul type="circle">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+
+    <!-- 2. Ordered List (<ol>) -->
+    <h3>Ordered List</h3>
+    <ol type="A" start="3">
+      <li>Third</li>
+      <li>Fourth</li>
+      <li>Fifth</li>
+    </ol>
+    <!-- Reverse Order -->
+    <ol reversed>
+      <li>Step 1</li>
+      <li>Step 2</li>
+      <li>Step 3</li>
+    </ol>
+
+    <!-- Nesting Lists (Sub-Lists) -->
+    <h3>Nested List</h3>
+    <ul>
+      <li>
+        Fruits
+        <ol>
+          <li>Apple</li>
+          <li>Banana</li>
+        </ol>
+      </li>
+      <li>
+        Vegetables
+        <ol>
+          <li>Potato</li>
+          <li>Tomato</li>
+        </ol>
+      </li>
+    </ul>
+
+    <!-- 4. Description List (<dl>, <dt>, <dd>) -->
+    <h3>Defination List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hyper Text Markup Language.</dd>
+      <dt>CSS</dt>
+      <dd>Casecading Style Sheet.</dd>
+    </dl>
+
+    <!-- Practice List -->
+    <h3>Practice List</h3>
+    <ol type="I">
+      <li>
+        List Item 1
+        <ol type="a">
+          <li>Nested Item 1.1</li>
+          <li>Nested Item 1.2</li>
+        </ol>
+      </li>
+      <li>
+        List Item 2
+        <ol type="1">
+          <li>Nested Item 2.1</li>
+          <li>
+            Nested Item 2.2
+            <ul type="circle">
+              <li>Nested Item 2.2.1</li>
+              <li>
+                Nested Item 2.2.2
+                <ul type="spuare">
+                  <li>Nested Item 2.2.2.1</li>
+                  <li>Nested Item 2.2.2.2</li>
+                </ul>
+              </li>
+              <li>Nested Item 2.2.3</li>
+            </ul>
+          </li>
+          <li>Nested Item 2.3</li>
+        </ol>
+      </li>
+      <li>
+        List Item 3
+        <ul type="disc">
+          <li>Nested Item 3.1</li>
+          <li>Nested Item 3.2</li>
+          <li>Nested Item 3.3</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
+<!-- 
+===================
+  Lists in HTML
+===================
+HTML provides a powerful way to present content in list format. There are three main types of lists in HTML:
+1) Unordered List (<ul>, <li>)
+2) Ordered List (<ol>, <li>)
+3) Defination List (<dl>, <dt>, <dd>)
+-->
