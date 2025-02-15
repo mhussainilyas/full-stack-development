@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tags In HTML</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Forms In HTML.</h1>
+
+      <form action="" method="" enctype="" target="" autocomplete="">
+        <!-- Text Input -->
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter username"
+          required
+        />
+
+        <br /><br />
+
+        <!-- Number Input -->
+        <input type="number" name="age" min="18" max="99" />
+        <br /><br />
+
+        <!-- Date Input -->
+        <input type="date" name="dob" />
+        <br /><br />
+
+        <!-- Password Input -->
+        <input type="password" name="password" required />
+        <br /><br />
+
+        <!-- Search Input -->
+        <input type="search" name="search" required />
+        <br /><br />
+
+        <!-- Email Input -->
+        <input type="email" name="email" required />
+        <br /><br />
+
+        <!-- Checkbox -->
+        <input type="checkbox" name="subscribe" value="yes" /> Subscribe to
+        newsletter <br /><br />
+
+        <!-- Radio Button -->
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> female <br /><br />
+
+        <!-- Select (Dropdown) -->
+        <select name="country">
+          <option value="">Select Country</option>
+          <option value="us">USA</option>
+          <option value="uk">UK</option>
+        </select>
+        <br /><br />
+
+        <!-- Textarea -->
+        <textarea name="message" rows="4" cols="50">
+Enter your message here...</textarea
+        >
+        <br /><br />
+
+        <!-- File Upload -->
+        <input type="file" name="upload" />
+        <br /><br />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+        <br /><br />
+
+        <!-- Button Element -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Hello')">Click Me</button>
+        <br /><br />
+
+        <!-- 
+        =======================
+          Fieldset and Legend
+        =======================
+        -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input type="text" name="name" placeholder="Name" />
+        </fieldset>
+
+        <!-- 
+        ===========================
+          Common Design Practices
+        ===========================
+        -->
+        <!-- Labels for Accessibility -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+
+        <!-- Grouping Related Fields -->
+        <fieldset>
+          <legend>Contact Details</legend>
+          <input type="text" name="phone" />
+        </fieldset>
+
+        <!-- 
+        =======================
+          Advanced Concepts
+        =======================
+        -->
+        <!-- Hidden Input Fields -->
+        <input type="hidden" name="userId" value="12345" />
+
+        <!-- Datalist (Autocomplete suggestions) -->
+        <input list="browsers" name="browser" />
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Safari"></option>
+        </datalist>
+      </form>
+
+      <h2>Form Practice</h2>
+      <form action="./loggin-successfull.html">
+        <fieldset>
+          <legend>Registration Form</legend>
+
+          <!-- firstname -->
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Enter First Name"
+            required
+          /><br />
+
+          <!-- lastname -->
+          <label for="lastname">Last Name:</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Enter Last Name"
+          /><br />
+
+          <!-- email -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+          /><br />
+
+          <!-- password -->
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          /><br />
+
+          <!-- gender -->
+          <label for="gender">Gender: </label><br />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" /><br />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" /><br />
+          <label for="other">Other</label>
+          <input type="radio" name="other" id="other" /><br />
+
+          <!-- age -->
+          <label for="age">Age: </label>
+          <input type="number" name="age" id="age" required /><br />
+
+          <!-- preferences -->
+          <label for="preferences">Preferences:</label><br />
+          <label for="a-painting">Acrylic painting</label>
+          <input type="checkbox" name="a-painting" id="a-painting" /><br />
+          <label for="o-painting">Oil painting</label>
+          <input type="checkbox" name="o-painting" id="o-painting" /><br />
+          <label for="w-painting">Water Color painting</label>
+          <input type="checkbox" name="w-painting" id="w-painting" /><br />
+
+          <!-- occupation -->
+          <label for="occupation">Select Occupation</label>
+          <select name="occupation" id="occupation">
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Employee">Employee</option></select
+          ><br />
+
+          <!-- bio message -->
+          <label for="bio">Bio: </label>
+          <textarea
+            name="bio"
+            id="bio"
+            rows="5"
+            cols="40"
+            placeholder="Share few lines about yourself..."
+          ></textarea
+          ><br />
+
+          <!-- buttons -->
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- 
+===============
+  HTML Forms
+===============
+
+-------- Form Tags ---------
+
+1) <form></form>
+2) <label></label>
+3) <input />
+4) <select></select>
+5) <option></option>
+6) <textarea></textarea>
+7) <button></button>
+8) <fieldset></fieldset>
+9) <legend></legend>
+10) <datalist></datalist>
+
+-------- Form Attributes ---------
+
+1) action=""
+2) method=""
+3) enctype=""
+4) target=""
+5) autocomplete=""
+
+-------- Form Elements ---------
+
+a. Text Input
+b. Password Input
+c. Email Input
+d. Number Input
+e. Date Input
+f. Checkbox
+g. Radio Button
+h. Select (Dropdown)
+i. Textarea
+j. File Upload
+k. Submit Button
+l. Button Element
+
+-------- Input Attributes ---------
+
+1) value=""
+2) placeholder=""
+3) name=""
+4) required
+5) disabled
+6) readonly
+7) maxlength=""
+8) minlength=""
+9) pattern=""
+10) checked
+11) multiple
+
+-->
